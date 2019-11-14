@@ -1,0 +1,529 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* HEADER */
+
+
+header{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 40px;
+    box-shadow: 0 0 30px rgba(7,51,84,0.17);
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1000;
+    transition: 0.4s;
+}
+header h1{
+    font-size: 23px;
+    margin: 0;
+    font-weight: 600;
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+    padding-right: 22px;
+}
+header a:hover{
+    text-decoration: none;
+    color: #666; 
+    cursor: pointer;
+}
+nav { 
+    margin-left: auto;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    font-weight: 700;
+    line-height: 0.5;
+    font-size: 14px;
+    align-items: center;
+    margin-bottom: 0px;
+}
+nav ul div{
+    display: flex;
+}
+nav ul span{
+    font-size: 24px;
+    display: none;
+    color: #20292f;
+    cursor: pointer;
+}
+.hamMenuOpen{
+    border-top: 5px #2ea3f2 solid;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute ;
+    height: auto;
+    width: 80%;
+    background-color: white;
+    position: fixed;
+    top: 80px;
+    left: 10%;
+    z-index: 150;
+    padding: 3% 5% 5%;
+    transition: 0.3s;
+}
+.navListOpen{
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+}
+nav a{
+    font-weight: 500;
+    font-size: 15px;
+}
+nav i a{
+    padding-right: 10px;
+}
+nav i a:hover{
+    color: #2ea3f2;
+}
+
+/* END OF HEADER  */
+
+/* BODY */
+
+#container{
+    width: 80%;
+    margin: auto;
+    padding: 100px 0px;
+}
+.section1, .section2, .section3, .section4{
+    padding: 50px 0px;
+}
+
+.section1 .col-lg-12{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.section1 h4{
+    font-family: 'Patua One',display;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #a06d51!important;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.section1 img{
+    margin-bottom: 28px;
+}
+.section1 h1{
+    font-family: 'Patua One',display;
+    font-size: 70px;
+    line-height: 1.2em;
+    padding-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+    text-align: center
+}
+.section2{
+    text-align: center;
+}
+.section2 .col-lg-4{
+    margin-bottom: 40px;
+}
+.section2 img{
+    width: 100%;
+    margin-bottom: 9px;
+}
+.section2 a{
+    text-decoration: none;
+    position: relative;
+}
+.section2 a div{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+.section2 a div div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+.section2 a div span{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    transition: 0.3s;
+    color: #a06d51!important;
+    opacity: 0;
+    z-index: 5;
+}
+.section2 i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 6px 18px;
+    background-color: #ef8f61!important;
+    border-radius: 3px;
+    font-weight: 300;
+    color: #ffffff;
+    z-index: 1;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+}
+
+.section2 a div:hover div{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.section2 a div:hover span{
+    top: 50%;
+    opacity: 1;
+}
+.section2 a>span{
+    display: flex;
+    justify-content: center;
+}
+.section2 del{
+    opacity: 0.5;
+    color: gray;
+    font-weight: 100;
+}
+.section2 ins{
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.section2 h2{
+    font-family: 'Patua One',display;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333333!important;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    font-weight: 500;
+    padding: 8px 0px;
+}
+.section2 h3{
+    font-family: 'Patua One',display;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #a06d51!important;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.page{
+    display: flex;
+    justify-content: center;
+}
+.page a{
+    text-decoration: none;
+    color: #666;
+}
+.page ul{
+    display: flex;
+}
+.page li{
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 0.5px gray solid;
+    position: relative;
+    margin-left: -1px;
+    color: #666;
+}
+.page li:nth-child(1){
+    background-color: gainsboro;
+}
+.page li:hover{
+    background-color: gainsboro;
+}
+
+.section3 img{
+    width: 100%;
+}
+.section3 h4{
+    font-family: 'Patua One', cursive;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #a06d51;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+}
+.section3 h2{
+    font-family: 'Patua One', cursive;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.4em;
+    padding-bottom: 30px
+}
+.section3 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+    color: #666;
+    margin-bottom: 50px;
+    font-weight: 300;
+    text-align: justify;
+
+}
+.section3 a{
+    letter-spacing: 1px;
+    font-size: 14px;
+    background-color: #a06d51;
+    color: rgb(255, 255, 255);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700 ;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+.section3 a:hover{
+    background-color: #ac795e;
+    color: #ffffff;
+    cursor: pointer;
+}
+.section3 .col-lg-7 div:nth-child(1) img{
+    width: 50px;
+    height: 13px;
+    margin-bottom: 30px; 
+}
+.section3 .col-lg-7 div:nth-child(2) img{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.section4 img{
+    width: 100%;
+}
+.section4 h4{
+    font-family: 'Patua One', cursive;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #a06d51;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+}
+.section4 h2{
+    font-family: 'Patua One', cursive;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.4em;
+    padding-bottom: 30px
+}
+.section4 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    color: #666;
+    margin-bottom: 50px;
+    font-weight: 300;
+    text-align: justify;
+}
+.section4 a{
+    letter-spacing: 1px;
+    font-size: 14px;
+    background-color: #a06d51;
+    color: rgb(255, 255, 255);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700 ;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+.section4 a:hover{
+    background-color: #ac795e;
+    color: #ffffff;
+    cursor: pointer;
+}
+.section4 .col-lg-6:nth-child(1) img{
+    width: 50px;
+    height: 13px;
+    margin-bottom: 30px; 
+}
+.section4 .col-lg-6:nth-child(2) img{
+    width: 100%;
+}
+
+/* FOOTER */
+
+.footer-top{
+    background-image: linear-gradient(180deg,#160d08 0%,rgba(0,0,0,0.66) 100%),url(https://www.elegantthemes.com/layouts/wp-content/uploads/2019/02/bakery-31.jpg) !important;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+ }
+ .section-4{
+    margin-top: 60px !important;
+    margin: auto;
+    padding: 2% 0 10%;
+    width: 80%;
+    max-width: 1080px;
+ }
+ .section-4 h3{
+    color: #a06d51;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 10px;
+ }
+ .section-4 p{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color:#fff;
+    font-size: 14px;
+    line-height: 2rem;
+ }
+ .icons{
+    display: flex;
+    line-height: 2rem;
+ }
+ .icon{
+    width: 32px;
+    height: 32px;
+    color: white;
+    margin-right: 8px;
+ }
+ .button{
+    width: 676px;
+ }
+ button{
+    width: 153px;
+    height: 56px;
+    background-color: #a06d51;
+    border-style: none;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+ }
+ button:hover{
+    background-color: #ac795e;
+ }
+ footer{
+    display: flex;
+    padding: 0% 10%;
+    background-color: #222;
+    color: #666;
+    height: 54px;
+    align-items: center;
+ }
+ .icons-icons{
+    display: flex;
+    margin-left: auto;
+ }
+ .icon-icon{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+ }
+ .icon-icon .fab:hover, .icon-icon .fas:hover{
+     color: #2ea3f2;
+ }
+ .footer-top img{
+    max-width: 100%;
+    height: auto;
+ }
+ footer p{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 14px;
+    
+ }
+ footer a{
+    color: #666;
+    font-weight: 700;
+ }
+
+ .footer:hover{
+    color: #2ea3f2;
+ }
+ footer p a:hover{
+    text-decoration: none;
+    color: rgb(71, 70, 70);
+ }
+ footer i{
+    font-size: 27px;
+ }
+ footer .fa-facebook-f{
+    font-size: 24px;
+    padding-top: 1px;
+ }
+ footer .fa-google-plus-g{
+    font-size: 30px;
+ }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 991.98px) {
+    nav ul li{
+        display: none;
+        border-bottom: 0.5px rgba(102, 102, 102, 0.2) solid;
+        font-weight: 100;
+    }
+    nav ul li:hover{
+        background-color:  rgba(102, 102, 102, 0.05);
+    }
+    nav ul li:hover a{
+        color: #666;
+    }
+    nav ul li:nth-child(8){
+        display: block;
+    }
+    nav ul span{
+        display: block;
+    }
+    header{
+        height: 80px !important;
+    }
+    footer{
+        height: 86px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    footer p{
+        text-align: center;
+        line-height: 1.4rem;
+    }
+    .icons-icons{
+        margin-left: unset;
+    }
+    .footer-top{
+        background-size: cover;
+    }
+    .section-4{
+        margin-top: 33px !important;
+    }
+    .button{
+        margin-top: 20px;
+    }
+    #section2{
+        padding: 75px 0px 25px;
+    }
+    header a{
+        padding-right: 0px;
+    }
+    .section3 .col-lg-7{
+        margin-top: 50px;  
+    }
+    .section4 .col-lg-6:nth-child(2){
+        margin-top: 50px;  
+    }
+ }
+ @media (max-width: 500px){
+    .section1 h1{
+        font-size: 40px;
+    }
+ }
